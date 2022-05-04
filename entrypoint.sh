@@ -15,3 +15,4 @@ echo
 echo "Looking for files/directories in current working directory not owned by \"$USER_UID\""
 echo
 find . ! -user $USER_UID -exec $SCRIPT_PATH/update_file_object.sh "{}" "$USER_UID" \;
+echo "Ownership permissions updated"

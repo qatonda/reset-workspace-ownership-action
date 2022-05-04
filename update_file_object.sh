@@ -10,9 +10,4 @@ if [[ -z "$2" ]]; then
     exit 2
 fi
 
-echo "Updating ownership: $1"
-echo "  `ls -lad $1`"
 chown -cvf $2 $1
-echo "Modified ownership: $1"
-echo "  `ls -lad $1`"
-echo
